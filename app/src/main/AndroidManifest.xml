@@ -9,6 +9,7 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
         android:allowBackup="true"
@@ -54,6 +55,7 @@
                 <action android:name="android.telecom.CallScreeningService" />
             </intent-filter>
         </service>
+        <service android:name=".services.MyFloatingWindowService"/>
     </application>
 
 </manifest>
